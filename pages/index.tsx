@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </div>
       <div className={`${styles.innerContainer}`}>
-        <div className="container h-ic max-h-halfpage flex flex-row">
+        <div className="container h-ic max-h-halfpage mx-auto flex flex-row relative">
           <div className="flex-1 h-full invisible md:visible relative">
             <Image className="absolute h-full object-contain"
               src="/nozomi+mizore.webp" alt="Nozomi and Mizore" width={1300} height={1779}></Image>
@@ -60,9 +60,9 @@ export default function Home() {
             <p>Running bot not free.</p>
             <p>Help is much appreciated.</p>
           </div>
+          <div className="absolute -bottom-4 left-0 right-0 h-8 rounded-xl"
+            style={{backgroundImage: 'url(/oboetile.webp)', backgroundSize: 'auto 100%'}}></div>
         </div>
-        <div className="absolute bottom-6 left-0 right-0 h-8"
-          style={{backgroundImage: 'url(/oboetile.webp)', backgroundSize: 'auto 100%'}}></div>
       </div>
       <div className={`${styles.innerContainer}`}>
         <div className="container h-ic max-h-page flex flex-row">
