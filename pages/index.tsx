@@ -61,12 +61,14 @@ export default function Home() {
             <p>Help is much appreciated.</p>
           </div>
         </div>
-        <div className={`${styles.innerContainer}`}>
-          <div className="container h-ic max-h-page flex flex-row">
-            <div className="flex-1 text-center flex flex-col justify-center items-center">
-              <h3 className="text-3xl font-bold">Virtual Pets</h3>
-              <p>Virtual</p>
-            </div>
+        <div className="absolute bottom-6 left-0 right-0 h-8"
+          style={{backgroundImage: 'url(/oboetile.webp)', backgroundSize: 'auto 100%'}}></div>
+      </div>
+      <div className={`${styles.innerContainer}`}>
+        <div className="container h-ic max-h-page flex flex-row">
+          <div className="flex-1 text-center flex flex-col justify-center items-center">
+            <h3 className="text-3xl font-bold">Virtual Pets</h3>
+            <p>Virtual</p>
           </div>
         </div>
       </div>
