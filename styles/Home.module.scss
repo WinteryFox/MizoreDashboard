@@ -1,0 +1,42 @@
+.heroBanner {
+    &::after {
+        $spacing: 2rem;
+        content: '';
+        position: absolute;
+        top: $spacing;
+        bottom: $spacing;
+        left: $spacing;
+        right: $spacing;
+        pointer-events: none;
+
+        border: 1rem var(--dull-color) solid;
+    }
+
+    & .button {
+        background-color: var(--action-color);
+    }
+}
+
+.title {
+    color: var(--primary-color);
+}
+.subtitle {
+    color: var(--secondary-color);
+}
+
+.innerContainer {
+    width: 100%;
+    padding: var(--universal-padding);
+
+    &.stats {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+
+    &.sheetMusic {
+        background-color: var(--black-color);
+    }
+}
+
+
+

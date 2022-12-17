@@ -1,0 +1,44 @@
+$primary-color: rgb(118,104,157);
+$secondary-color: rgb(187,164,182);
+$action-color: rgb(175,174,216);
+$dull-color: rgb(203,213,222);
+
+$black-color: rgb(46, 45, 46);
+
+$universal-padding: 3rem;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --action-color: #{$action-color};
+  --dull-color: #{$dull-color};
+  --universal-padding: #{$universal-padding};
+  --black-color: #{$black-color};
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: bold;
+}

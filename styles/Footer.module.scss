@@ -1,0 +1,8 @@
+$footer-bg: rgb(46, 45, 46);
+$footer-txt: rgb(255,255, 255);
+
+.footer {
+    background-color: $footer-bg;
+    color: $footer-txt;
+    padding: var(--universal-padding);
+}
