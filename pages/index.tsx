@@ -15,23 +15,24 @@ export default function Home() {
             <h1 className={`${styles.title} text-8xl mb-4`}>Mizore</h1>
             {/** TODO: add subheading */}
             <h2 className={`${styles.subtitle} text-3xl mb-3`}>Subheading here</h2>
-            <button type="submit" className={`${styles.button} inline-block p-3`}>Add to server</button>
+            <button type="submit" className={`${styles.button} inline-block rounded-md p-3`}>Add to server</button>
           </div>
         </div>
       </div>
+
       <div className={`${styles.innerContainer} ${styles.stats}`}>
           <div className="container mx-auto">
-            <p className="text-lg md:w-1/2 md:text-right">Serving <strong>{'{}'}</strong> servers</p>
+            <p className="text-lg md:w-1/2 md:text-right md:pr-3">Serving <strong>{'{}'}</strong> servers</p>
             <p className="text-lg md:text-center"><strong>{'{}'}</strong> users strong</p>
-            <p className="text-lg md:w-1/2 md:ml-auto md:text-left">Another <strong>statistic</strong></p>
+            <p className="text-lg md:w-1/2 md:ml-auto md:text-left md:pl-3">Another <strong>statistic</strong></p>
           </div>
       </div>
+
       <div className={`${styles.innerContainer} ${styles.sheetMusic}`}>
-        <div className="container bg-white flex flex-col lg:flex-row h-ic mx-auto max-h-page">
-          <div className="flex-1 min-h-full text-center px-8 lg:border-r lg:border-black lg:border-dashed">
+        <div className="container bg-white flex flex-col lg:flex-row min-h-[8in] h-ic mx-auto max-h-page overflow-hidden">
+          <div className="flex-1 min-h-full text-center p-8 lg:border-r lg:border-black lg:border-dashed">
             <h3 className="font-bold mt-36 text-3xl">Features</h3>
             <p>Why you should add me</p>
-
             {/* <ol className="list-[lower-roman] list-inside block text-left w-80 mx-auto mt-16 mb-80"> */}
             <ol className="block text-left w-3/4 lg:w-96 mx-auto mt-16 mb-80">
               <li>Fun virtual pet system</li>
@@ -39,16 +40,16 @@ export default function Home() {
               <li>99.9% uptime</li>
               <li>24/7 support server</li>
             </ol>
-
             <p>Kitauji High School</p>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 invisible lg:visible">
             {/** TODO: Fill this section with image? */}
             <Image src="/sc1.webp" alt="Screenshot 1" width={681} height={350}></Image>
             placeholder
           </div>
         </div>
       </div>
+
       <div className={`${styles.innerContainer}`}>
         <div className="container h-ic max-h-halfpage mx-auto flex flex-row relative">
           <div className="flex-1 h-full invisible md:visible relative">
@@ -60,12 +61,15 @@ export default function Home() {
             <p>Running bot not free.</p>
             <p>Help is much appreciated.</p>
           </div>
-          <div className="absolute -bottom-4 left-0 right-0 h-8 rounded-xl"
-            style={{backgroundImage: 'url(/oboetile.webp)', backgroundSize: 'auto 100%'}}></div>
+          {/* <div className="absolute top-full mt-32 left-0 right-0 h-24 w-full bg-repeat-space"
+            style={{backgroundImage: 'url(/enghorn.png)', backgroundSize: 'auto 100%'}}
+            // style={{backgroundImage: 'url(/oboetile.webp)', backgroundSize: 'auto 100%'}}
+            ></div> */}
         </div>
       </div>
+
       <div className={`${styles.innerContainer}`}>
-        <div className="container h-ic max-h-page flex flex-row">
+        <div className="container h-ic max-h-page mx-auto flex flex-row">
           <div className="flex-1 text-center flex flex-col justify-center items-center">
             <h3 className="text-3xl font-bold">Virtual Pets</h3>
             <p>Virtual</p>

@@ -11,9 +11,16 @@ export default function Footer() {
             Important disclaimer or anything random blah blah blah
           </p>
         </div>
-        <div>
-          <p><strong>Other things</strong></p>
-          <a href="https://discord.gg/6vJXZ8d"><p>Support Server</p></a>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="md:mr-8">
+            <p><strong>Contact</strong></p>
+            <a href="mailto:yayaya@example.com">contact@example.com</a>
+          </div>
+          <div>
+            <p><strong>Links</strong></p>
+            <a href="/privacy"><p>Privacy Policy</p></a>
+            <a href="https://discord.gg/6vJXZ8d"><p>Support Server</p></a>
+          </div>
         </div>
       </div>
       <p className="text-center">

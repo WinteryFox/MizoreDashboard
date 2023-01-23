@@ -1,3 +1,5 @@
+const innerContainerSize = '76vh'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,13 +10,13 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        ic: '80vh'
+        ic: innerContainerSize
       },
       minHeight: {
-        ic: '80vh'
+        ic: innerContainerSize
       },
       maxHeight: {
-        halfpage: '5in',
+        halfpage: '7in',
         page: '11in'
       },
       maxWidth: {

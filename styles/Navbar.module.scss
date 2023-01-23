@@ -1,0 +1,26 @@
+$border-radius: 3px;
+
+.nav {
+    background-color: rgb(229, 227, 233);
+    color: var(--primary-color);
+
+    & .link {
+        text-decoration: none;
+        padding: 6px;
+        border-radius: $border-radius;
+
+        &:hover {
+            background-color: rgba(204, 188, 211, 0.342);
+        }
+    }
+
+    & .action {
+        display: block;
+        position: relative;
+        background-color: var(--action-color);
+        color: black;
+        padding: 6px;
+        text-decoration: none;
+        border-radius: $border-radius;
+    }
+}
